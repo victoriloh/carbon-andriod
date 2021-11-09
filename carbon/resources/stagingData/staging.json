@@ -1,0 +1,9 @@
+{
+  "SignIn": {
+    "valid_phone": "08990001100",
+    "valid_pin": "1234",
+    "verification_code": "123456",
+    "valid_phone2": "08990001101",
+    "invalid_phone": "080111111111"
+  }
+}

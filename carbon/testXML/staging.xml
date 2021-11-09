@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Carbon" parallel="tests" thread-count="1">
+    <parameter name="groupReport" value="/test-report/Carbon.html"/>
+    <parameter name="config" value="data.config.json" />
+    <parameter name="environment" value="chrome" />
+    <parameter name="server" value="local" />
+    <parameter name="downloadPath" value="/files/" />
+    <parameter name="testEnv" value="StagingData" />
+
+    <test name="test1">
+        <parameter name="systemPort" value="8228" />
+        <parameter name="deviceNo" value="1" />
+
+        <classes>
+            <class name="admin.SignIn">
+                <methods>
+                    <include name="Login" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
